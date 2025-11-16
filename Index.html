@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAN Player - WinTube</title>
+<style>
+  body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  h1 {
+    margin: 20px 0 10px 0;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  iframe {
+    width: 80%;
+    height: 60%;
+    border: none;
+  }
+  .offline {
+    display: none;
+    text-align: center;
+    font-size: 1.5em;
+  }
+</style>
+</head>
+<body>
+
+<h1>WAN Player</h1>
+<p>WinTube player now introducing WAN Player where another branch of WinTube starts</p>
+
+<iframe id="wanStream" src="https://www.youtube.com/embed/VDFIC2kyLys?autoplay=1" allowfullscreen></iframe>
+<div class="offline" id="offlineMessage">No live stream currently</div>
+
+<script>
+// Optional: check if live stream is live
+// This part requires YouTube API key if you want auto-detect
+// For now, it will just always show the iframe
+</script>
+
+</body>
+</html>
